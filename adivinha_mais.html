@@ -1,33 +1,40 @@
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>  
+	<head>
+		<meta charset="utf-8">
+	</head>
 
-<h2>ADIVINHA O NÚMERO DE 1 A 10 CUZAO!!!!!</h2>
-<br>
+	<body>
+		<h2>ADIVINHA O NÚMERO DE 1 A 10 CUZAO!!!!!</h2>
+		<br>
 
-<input>
-<button>Compare com o meu segredo!</button>
+		<input>
+		<button>Compare com o meu segredo!</button>
 
-<script>
+		<script>
 
-	var segredo = Math.round(Math.random() * 10);
+			var segredo = Math.round(Math.random() * 10);
 
-	var input = document.querySelector("input");
-	input.focus();
-	function verifica() {
+			var input = document.querySelector("input");
+			input.focus();
+			function verifica() {
 
-		if(input.value == segredo) {
+				if(input.value == segredo) {
 
-		alert("Você acertou!");
-		} else {
+				alert("Você acertou!");
+				} else {
 
-		alert("Você errooouuu!!!!");
-		}
+				alert("Você errooouuu!!!!");
+				}
 
-		input.value = "";
-		input.focus();
-	}
+				input.value = "";
+				input.focus();
+			}
 
-	var button = document.querySelector("button");
+			var button = document.querySelector("button");
 
-	button.onclick = verifica;
+			button.onclick = verifica;
 
-</script>
+		</script>
+	</body>
+</html>
